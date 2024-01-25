@@ -1,0 +1,36 @@
+.vendor-details-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.vendor-details-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.vendor-details-container h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.vendor-details-container p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.vendor-details-container .loading {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.vendor-details-container .error {
+    color: red;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}

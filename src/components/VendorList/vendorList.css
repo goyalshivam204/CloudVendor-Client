@@ -1,0 +1,36 @@
+.vendor-list-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.vendor-list-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.vendor-list-container h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.vendor-list-container p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.vendor-list-container .empty-message {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.vendor-list-container .error {
+    color: red;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}

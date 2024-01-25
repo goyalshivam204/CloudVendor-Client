@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import VendorList from './components/VendorList/VendorList';
+import VendorDetails from './components/VendorDetails/VendorDetails';
+import CreateVendor from './components/CreateVendor/CreateVendor';
+import UpdateVendor from './components/UpdateVendor/UpdateVendor';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path="/" component={VendorList} />
+          <Route path="/vendors/:id" component={VendorDetails} />
+          <Route path="/create" component={CreateVendor} />
+          <Route path="/update/:id" component={UpdateVendor} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
